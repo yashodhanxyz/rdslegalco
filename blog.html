@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/images/r-l.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="assets/images/r-b.png" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="assets/images/r-l.png" />
+  <meta name="description" content="RDS Legal Co Insights: analysis on litigation, tribunals, regulatory developments, and cross-border legal practice from a Pune-based pan-India law firm." />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Blog — RDS Legal Co</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://www.rds.legal/blog.html",
+    "url": "https://www.rds.legal/blog.html",
+    "name": "RDS Legal Co Insights",
+    "description": "Analysis on litigation, tribunals, regulatory developments, and cross-border legal practice.",
+    "isPartOf": {"@id": "https://www.rds.legal/#website"}
+  }
+  </script>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: var(--sp-12);
+      align-items: start;
+    }
+    .blog-main-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--sp-8);
+    }
+    /* Sidebar */
+    .sidebar { position: sticky; top: calc(var(--navbar-h) + var(--sp-8)); }
+    .sidebar-widget {
+      background: var(--clr-white);
+      border-radius: var(--radius-md);
+      padding: var(--sp-8);
+      margin-bottom: var(--sp-6);
+      box-shadow: var(--shadow-sm);
+    }
+    .sidebar-widget h3 {
+      font-family: var(--font-serif);
+      font-size: var(--fs-lg);
+      font-weight: var(--fw-semi);
+      color: var(--clr-text-dark);
+      margin-bottom: var(--sp-6);
+      padding-bottom: var(--sp-4);
+      border-bottom: 1px solid var(--clr-border-light);
+    }
+    .sidebar-post { display: flex; gap: var(--sp-4); margin-bottom: var(--sp-4); padding-bottom: var(--sp-4); border-bottom: 1px solid rgba(28,28,28,0.06); }
+    .sidebar-post:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .sidebar-post img { width: 64px; height: 64px; object-fit: cover; border-radius: var(--radius-sm); flex-shrink: 0; }
+    .sidebar-post-title { font-family: var(--font-serif); font-size: var(--fs-base); font-weight: var(--fw-semi); color: var(--clr-text-dark); line-height: 1.3; margin-bottom: var(--sp-1); }
+    .sidebar-post-date { font-size: var(--fs-xs); color: var(--clr-text-lighter); }
+    .cat-list { display: flex; flex-direction: column; gap: var(--sp-3); }
+    .cat-item { display: flex; justify-content: space-between; align-items: center; font-size: var(--fs-sm); color: var(--clr-text-muted); padding: var(--sp-2) 0; border-bottom: 1px solid rgba(28,28,28,0.06); }
+    .cat-count { font-size: var(--fs-xs); background: var(--clr-body-alt); padding: 2px 8px; border-radius: var(--radius-full); }
+    .newsletter-input { display: flex; gap: var(--sp-2); margin-top: var(--sp-4); }
+    .newsletter-input input { flex: 1; padding: var(--sp-3) var(--sp-4); border: 1px solid rgba(28,28,28,0.15); border-radius: var(--radius-sm); font-size: var(--fs-sm); outline: none; }
+    .newsletter-input button { background: var(--clr-text-dark); color: var(--clr-white); border: none; padding: var(--sp-3) var(--sp-5); border-radius: var(--radius-sm); font-size: var(--fs-xs); cursor: pointer; white-space: nowrap; }
+    @media (max-width: 1024px) {
+      .blog-layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .blog-main-grid { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 640px) and (max-width: 1024px) {
+      .blog-main-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <div
+      id="site-inner-hero"
+      data-hero-alt="Legal insights"
+      data-hero-label="Research &amp; commentary"
+      data-hero-heading="Legal Insights from Courts and Tribunals"
+      data-hero-sub="Practical analysis from our Pune-based teams on pan-India litigation, advisory mandates, and cross-border legal developments."
+    ></div>
+
+    <!-- BLOG SECTION -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs reveal" aria-label="Blog categories">
+          <button class="filter-tab active" data-category="all" type="button" aria-pressed="true">All</button>
+          <button class="filter-tab" data-category="family-law" type="button" aria-pressed="false">Family Law</button>
+          <button class="filter-tab" data-category="corporate" type="button" aria-pressed="false">Corporate</button>
+          <button class="filter-tab" data-category="litigation" type="button" aria-pressed="false">Litigation</button>
+          <button class="filter-tab" data-category="arbitration" type="button" aria-pressed="false">Arbitration</button>
+          <button class="filter-tab" data-category="real-estate" type="button" aria-pressed="false">Real Estate</button>
+        </div>
+
+        <div class="blog-layout">
+          <!-- Main grid -->
+          <div>
+            <div class="blog-main-grid stagger">
+
+              <article class="blog-card reveal" data-category="corporate">
+                <div class="blog-card__img-wrap">
+                  <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a86f_pexels-2057412141-29340056%20(1).jpg" alt="Data protection article" loading="lazy" />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta"><span class="blog-card__tag">Corporate Law</span><span class="blog-card__date">Mar 1, 2026</span></div>
+                  <h3 class="blog-card__title">Data protection and commercial contracts in 2026</h3>
+                  <p class="blog-card__excerpt">The regulatory landscape for cross-border contracts is shifting rapidly. Here is what general counsel should update immediately.</p>
+                  <a href="blog-post.html" class="blog-card__link">Read Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal" data-category="family-law">
+                <div class="blog-card__img-wrap">
+                  <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a870_mitchell-kmetz-ztVcGTSD8xw-unsplash%20(1).webp" alt="Family law article" loading="lazy" />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta"><span class="blog-card__tag">Family Law</span><span class="blog-card__date">Feb 18, 2026</span></div>
+                  <h3 class="blog-card__title">Understanding your rights in international divorce proceedings</h3>
+                  <p class="blog-card__excerpt">When one spouse is overseas, forum choice, asset tracing, and enforceability become decisive. This note explains the legal framework.</p>
+                  <a href="blog-post.html" class="blog-card__link">Read Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal" data-category="arbitration">
+                <div class="blog-card__img-wrap">
+                  <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a86f_pexels-2057412141-29340056%20(1).jpg" alt="Arbitration article" loading="lazy" />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta"><span class="blog-card__tag">Arbitration</span><span class="blog-card__date">Feb 5, 2026</span></div>
+                  <h3 class="blog-card__title">Why businesses are choosing arbitration over court litigation in 2026</h3>
+                  <p class="blog-card__excerpt">Speed, confidentiality, and finality — explore the rising preference for arbitration in commercial disputes and how to draft winning clauses.</p>
+                  <a href="blog-post.html" class="blog-card__link">Read Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal" data-category="litigation">
+                <div class="blog-card__img-wrap">
+                  <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a870_mitchell-kmetz-ztVcGTSD8xw-unsplash%20(1).webp" alt="Litigation article" loading="lazy" />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta"><span class="blog-card__tag">Litigation</span><span class="blog-card__date">Jan 22, 2026</span></div>
+                  <h3 class="blog-card__title">Five common mistakes plaintiffs make before filing a civil suit</h3>
+                  <p class="blog-card__excerpt">Procedural missteps can derail an otherwise strong case. Our litigation team shares the most preventable errors and how to avoid them.</p>
+                  <a href="blog-post.html" class="blog-card__link">Read Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal" data-category="real-estate">
+                <div class="blog-card__img-wrap">
+                  <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a88b_josh-power-Vd1Kozoez5g-unsplash.webp" alt="Real estate article" loading="lazy" />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta"><span class="blog-card__tag">Real Estate</span><span class="blog-card__date">Jan 10, 2026</span></div>
+                  <h3 class="blog-card__title">RERA amendments 2026: what property buyers and developers need to know</h3>
+                  <p class="blog-card__excerpt">A comprehensive breakdown of the latest RERA amendments and their practical impact on project timelines, refunds, and dispute resolution.</p>
+                  <a href="blog-post.html" class="blog-card__link">Read Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal" data-category="corporate">
+                <div class="blog-card__img-wrap">
+                  <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a88a_pexels-40037226-7255854%201%20(1).webp" alt="Corporate governance article" loading="lazy" />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta"><span class="blog-card__tag">Corporate Law</span><span class="blog-card__date">Dec 28, 2025</span></div>
+                  <h3 class="blog-card__title">Director liability in the age of ESG: navigating new governance standards</h3>
+                  <p class="blog-card__excerpt">As ESG obligations crystallise into law, board members face expanded personal liability. Here's how to stay protected.</p>
+                  <a href="blog-post.html" class="blog-card__link">Read Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination reveal">
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <button class="page-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar reveal-right">
+
+            <div class="sidebar-widget">
+              <h3>Recent Posts</h3>
+              <div class="sidebar-post">
+                <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a86f_pexels-2057412141-29340056%20(1).jpg" alt="Recent post" loading="lazy" />
+                <div>
+                  <div class="sidebar-post-title">Data protection and commercial contracts in 2026</div>
+                  <div class="sidebar-post-date">Mar 1, 2026</div>
+                </div>
+              </div>
+              <div class="sidebar-post">
+                <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a870_mitchell-kmetz-ztVcGTSD8xw-unsplash%20(1).webp" alt="Recent post" loading="lazy" />
+                <div>
+                  <div class="sidebar-post-title">Rights in international divorce proceedings</div>
+                  <div class="sidebar-post-date">Feb 18, 2026</div>
+                </div>
+              </div>
+              <div class="sidebar-post">
+                <img src="https://cdn.prod.website-files.com/686d069bb2a9c4117334a7b3/686d069bb2a9c4117334a88b_josh-power-Vd1Kozoez5g-unsplash.webp" alt="Recent post" loading="lazy" />
+                <div>
+                  <div class="sidebar-post-title">Why businesses are choosing arbitration in 2026</div>
+                  <div class="sidebar-post-date">Feb 5, 2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Categories</h3>
+              <div class="cat-list">
+                <div class="cat-item"><span>Corporate Law</span><span class="cat-count">12</span></div>
+                <div class="cat-item"><span>Family Law</span><span class="cat-count">9</span></div>
+                <div class="cat-item"><span>Litigation</span><span class="cat-count">7</span></div>
+                <div class="cat-item"><span>Arbitration</span><span class="cat-count">5</span></div>
+                <div class="cat-item"><span>Real Estate</span><span class="cat-count">4</span></div>
+                <div class="cat-item"><span>Criminal Defense</span><span class="cat-count">3</span></div>
+              </div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Newsletter</h3>
+              <p style="font-size:var(--fs-sm);color:var(--clr-text-muted);margin-bottom:var(--sp-2);">Receive concise updates on litigation, tribunals, and regulatory change.</p>
+              <div class="newsletter-input">
+                <input type="email" placeholder="Your email" aria-label="Email for newsletter" />
+                <button type="button">Subscribe</button>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <div id="site-cta" data-cta-label="Contact Us Today" data-cta-href="contact.html"></div>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>

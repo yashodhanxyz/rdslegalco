@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/images/r-l.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="assets/images/r-b.png" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="assets/images/r-l.png" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>404 — Page Not Found | RDS Legal Co</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.rds.legal/404.html",
+    "url": "https://www.rds.legal/404.html",
+    "name": "404 — Page Not Found | RDS Legal Co",
+    "isPartOf": {"@id": "https://www.rds.legal/#website"}
+  }
+  </script>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    body { background: var(--clr-hero-bg); color: var(--clr-text-light); min-height: 100vh; display: flex; flex-direction: column; }
+    .error-page {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--sp-8) var(--container-px);
+      position: relative;
+      overflow: hidden;
+    }
+    .error-page::before {
+      content: '404';
+      position: absolute;
+      font-family: var(--font-serif);
+      font-size: clamp(12rem, 30vw, 24rem);
+      font-weight: var(--fw-bold);
+      color: rgba(232,221,208,0.03);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1;
+      user-select: none;
+      pointer-events: none;
+    }
+    .error-inner { position: relative; z-index: 2; max-width: 560px; margin: auto; }
+    .error-num {
+      font-family: var(--font-serif);
+      font-size: clamp(5rem, 15vw, 10rem);
+      font-weight: var(--fw-bold);
+      color: var(--clr-accent);
+      line-height: 1;
+      margin-bottom: var(--sp-4);
+    }
+    .error-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: var(--fw-semi);
+      color: var(--clr-white);
+      margin-bottom: var(--sp-4);
+    }
+    .error-msg {
+      font-size: var(--fs-md);
+      color: var(--clr-text-lighter);
+      line-height: var(--lh-loose);
+      margin-bottom: var(--sp-10);
+    }
+    .error-actions { display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap; }
+    .error-footer {
+      border-top: 1px solid var(--clr-border-light);
+      padding: var(--sp-8) var(--container-px);
+      text-align: center;
+    }
+    .error-footer__copy {
+      font-size: var(--fs-xs);
+      color: var(--clr-text-lighter);
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Minimal navbar -->
+  <div id="site-header"></div>
+
+  <main class="error-page">
+    <div class="error-inner">
+      <div class="error-num">404</div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-msg">The page you're looking for doesn't exist, has been moved, or is temporarily unavailable. Let us help you find what you need.</p>
+      <div class="error-actions">
+        <a href="index.html"  class="btn btn--cream btn--lg">Go Home</a>
+        <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+      </div>
+
+      <!-- Quick links -->
+      <div style="margin-top:var(--sp-12);border-top:1px solid var(--clr-border-light);padding-top:var(--sp-8);">
+        <p style="font-size:var(--fs-sm);color:var(--clr-text-lighter);margin-bottom:var(--sp-4);">Or jump to:</p>
+        <div style="display:flex;gap:var(--sp-6);justify-content:center;flex-wrap:wrap;">
+          <a href="services.html" style="font-size:var(--fs-sm);color:var(--clr-accent);">Services</a>
+          <a href="team.html"     style="font-size:var(--fs-sm);color:var(--clr-accent);">Our Team</a>
+          <a href="about.html"    style="font-size:var(--fs-sm);color:var(--clr-accent);">About Us</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>

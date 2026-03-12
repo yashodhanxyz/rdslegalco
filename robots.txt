@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /blog.html
+Disallow: /blog-post.html
+
+Sitemap: https://www.rds.legal/sitemap.xml

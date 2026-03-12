@@ -1,0 +1,203 @@
+/* ============================================================
+   RDS Legal Co — animations.css
+   Keyframes, scroll-triggered reveal, transitions
+   ============================================================ */
+
+/* ── Keyframes ────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Scroll-reveal base states ────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out),
+              transform 0.7s var(--ease-out);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s var(--ease-out),
+              transform 0.7s var(--ease-out);
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s var(--ease-out),
+              transform 0.7s var(--ease-out);
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.93);
+  transition: opacity 0.65s var(--ease-out),
+              transform 0.65s var(--ease-out);
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered delays for grid children */
+.stagger > *:nth-child(1)  { transition-delay: 0ms; }
+.stagger > *:nth-child(2)  { transition-delay: 100ms; }
+.stagger > *:nth-child(3)  { transition-delay: 200ms; }
+.stagger > *:nth-child(4)  { transition-delay: 300ms; }
+.stagger > *:nth-child(5)  { transition-delay: 400ms; }
+.stagger > *:nth-child(6)  { transition-delay: 500ms; }
+.stagger > *:nth-child(7)  { transition-delay: 600ms; }
+.stagger > *:nth-child(8)  { transition-delay: 700ms; }
+
+/* ── Hero entry animation ─────────────────────────────────── */
+.hero__label,
+.hero__heading,
+.hero__sub,
+.hero__actions {
+  opacity: 0;
+  animation: fadeInUp 0.9s var(--ease-out) forwards;
+}
+
+.hero__label   { animation-delay: 0.2s; }
+.hero__heading { animation-delay: 0.4s; }
+.hero__sub     { animation-delay: 0.6s; }
+.hero__actions { animation-delay: 0.8s; }
+
+/* ── Navbar entrance ──────────────────────────────────────── */
+.navbar {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* ── Counter number pop ───────────────────────────────────── */
+.stat-item__number {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.stat-item.counting .stat-item__number {
+  animation: countUp 0.4s var(--ease-out) both;
+}
+
+/* ── Page transition overlay ──────────────────────────────── */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--clr-hero-bg);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-out);
+}
+
+.page-transition.active {
+  opacity: 1;
+}
+
+/* ── Smooth image load placeholder ───────────────────────── */
+img {
+  transition: opacity 0.4s ease;
+}
+
+img[loading="lazy"] {
+  opacity: 0;
+}
+
+img.loaded,
+img:not([loading]) {
+  opacity: 1;
+}
+
+/* ── Hover effects ────────────────────────────────────────── */
+.lift {
+  transition: transform var(--dur-base) var(--ease-out),
+              box-shadow var(--dur-base) var(--ease-out);
+}
+
+.lift:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Cursor trail decoration (subtle) ────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+}

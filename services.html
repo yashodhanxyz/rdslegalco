@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/images/r-l.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="assets/images/r-b.png" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="assets/images/r-l.png" />
+  <meta name="description" content="Explore legal services at RDS Legal Co: practical legal strategy, strong representation, and clear guidance for individuals and businesses across India." />
+  <title>Legal Services | RDS Legal Co — Practical Strategy, Strong Representation</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.rds.legal/services.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Legal Services | RDS Legal Co — Practical Strategy, Strong Representation" />
+  <meta property="og:description" content="RDS Legal Co helps clients navigate disputes, transactions, and regulatory matters with clear legal strategy and dependable representation." />
+  <meta property="og:url" content="https://www.rds.legal/services.html" />
+  <meta property="og:site_name" content="RDS Legal Co" />
+  <meta property="og:image" content="https://cdn.prod.website-files.com/686d069ab2a9c4117334a53f/686d069bb2a9c4117334a9b7_knoell-marketing-h8c2m599v4U-unsplash%20(1).jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:alt" content="RDS Legal Co" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Legal Services | RDS Legal Co — Practical Strategy, Strong Representation" />
+  <meta name="twitter:description" content="RDS Legal Co helps clients navigate disputes, transactions, and regulatory matters with clear legal strategy and dependable representation." />
+  <meta name="twitter:image" content="https://cdn.prod.website-files.com/686d069ab2a9c4117334a53f/686d069bb2a9c4117334a9b7_knoell-marketing-h8c2m599v4U-unsplash%20(1).jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.rds.legal/services.html",
+        "url": "https://www.rds.legal/services.html",
+        "name": "Legal Services | RDS Legal Co — Practical Strategy, Strong Representation",
+        "description": "Explore RDS Legal Co's legal services across disputes, advisory work, regulatory matters, and tribunal and appellate representation.",
+        "isPartOf": {"@id": "https://www.rds.legal/#website"},
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rds.legal/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rds.legal/services.html"}
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+      gap: var(--sp-8);
+    }
+    .differentiator {
+      display: flex;
+      gap: var(--sp-6);
+      padding: var(--sp-8);
+      background: var(--clr-body-bg);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .services-difference {
+      position: relative;
+      background-color: var(--clr-body-alt);
+      background-image:
+        linear-gradient(rgba(250, 246, 241, 0.9), rgba(250, 246, 241, 0.9)),
+        url('assets/images/obg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-bottom: clamp(var(--sp-10), 5vw, var(--sp-16));
+      overflow: hidden;
+    }
+    .services-difference .container {
+      position: relative;
+      z-index: 1;
+    }
+    .services-difference .section-label,
+    .services-difference h2 {
+      color: var(--clr-text-dark);
+    }
+    .services-difference .differentiator {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(28, 28, 28, 0.1);
+      box-shadow: var(--shadow-sm);
+    }
+    .services-difference .differentiator__num {
+      color: rgba(28, 28, 28, 0.16);
+    }
+    .services-difference .differentiator h3 {
+      color: var(--clr-text-dark);
+    }
+    .services-difference .differentiator p {
+      color: var(--clr-text-muted);
+    }
+    .differentiator__num {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: var(--fw-bold);
+      color: rgba(232,221,208,0.15);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .differentiator h3 {
+      font-family: var(--font-serif);
+      font-size: var(--fs-lg);
+      font-weight: var(--fw-semi);
+      color: var(--clr-text-dark);
+      margin-bottom: var(--sp-3);
+    }
+    .differentiator p { font-size: var(--fs-base); }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--sp-6);
+    }
+    .services-process {
+      position: relative;
+      background-color: var(--clr-body-alt);
+      background-image:
+        linear-gradient(rgba(250, 246, 241, 0.88), rgba(250, 246, 241, 0.94)),
+        url('assets/images/obg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-top: clamp(var(--sp-10), 5vw, var(--sp-16));
+      padding-bottom: clamp(var(--sp-16), 8vw, var(--sp-24));
+      border-top: 1px solid rgba(28, 28, 28, 0.08);
+      overflow: hidden;
+    }
+    .services-process::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(120% 90% at 50% 12%, rgba(190, 108, 38, 0.12) 0%, rgba(190, 108, 38, 0) 70%);
+      pointer-events: none;
+    }
+    .services-process .container {
+      position: relative;
+      z-index: 1;
+    }
+    .process-card {
+      text-align: center;
+      padding: var(--sp-8) var(--sp-6);
+      border: 1px solid rgba(28, 28, 28, 0.1);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.78);
+      transition: transform var(--dur-base), box-shadow var(--dur-base), border-color var(--dur-base), background var(--dur-base);
+    }
+    .process-card:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.92);
+      border-color: rgba(28, 28, 28, 0.2);
+      box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
+    }
+    .process-card__num {
+      font-family: var(--font-serif);
+      font-size: var(--fs-4xl);
+      font-weight: var(--fw-bold);
+      color: rgba(28, 28, 28, 0.16);
+      line-height: 1;
+      margin-bottom: var(--sp-4);
+    }
+    .process-card h3 {
+      font-family: var(--font-serif);
+      font-size: var(--fs-lg);
+      font-weight: var(--fw-semi);
+      color: var(--clr-text-dark);
+      margin-bottom: var(--sp-3);
+    }
+    .process-card p { font-size: var(--fs-base); color: var(--clr-text-muted); }
+    .cta-banner--services {
+      margin-top: 0;
+      border-top: 1px solid rgba(232, 221, 208, 0.18);
+      background-image:
+        linear-gradient(rgba(12, 6, 0, 0.92), rgba(12, 6, 0, 0.92)),
+        url('assets/images/obg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    @media (max-width: 1024px) {
+      .process-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .process-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <div
+      id="site-inner-hero"
+      data-hero-alt="Courtroom"
+      data-hero-label="What we do"
+      data-hero-heading="Our Legal Services"
+      data-hero-sub="Legal services designed to help you act early, reduce risk, and secure the strongest possible outcome for your matter."
+    ></div>
+
+    <!-- INTRO -->
+    <section class="section">
+      <div class="container container--narrow text-center reveal">
+        <span class="section-label">Our expertise</span>
+        <h2>Services built around your legal priorities</h2>
+        <p style="margin-top:var(--sp-6);">Whether you are protecting personal rights or business interests, we focus on three things clients care about most: clear advice, timely action, and reliable representation at every stage.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="section section--cream" id="all-services">
+      <div class="container">
+        <div class="services-grid stagger">
+
+          <article class="service-card reveal" id="arbitration">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+            </svg>
+            <h3 class="service-card__title">Arbitration &amp; Dispute Resolution</h3>
+            <p class="service-card__desc">Resolve commercial disputes efficiently through arbitration and mediation with enforceability-focused drafting and hearing strategy.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="litigation">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+            </svg>
+            <h3 class="service-card__title">Civil Litigation</h3>
+            <p class="service-card__desc">Pursue or defend civil claims with clear pleadings, evidence planning, and disciplined courtroom execution.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="corporate">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+            </svg>
+            <h3 class="service-card__title">Corporate &amp; Commercial Law</h3>
+            <p class="service-card__desc">Support critical business decisions through practical counsel on contracts, governance, compliance, and transactions.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="real-estate">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            <h3 class="service-card__title">Real Estate &amp; Property Law</h3>
+            <p class="service-card__desc">De-risk property transactions with robust title checks, precise documentation, and dispute support when conflicts arise.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="criminal">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <h3 class="service-card__title">Criminal Defense</h3>
+            <p class="service-card__desc">Protect liberty and reputation with immediate legal response, bail strategy, trial defence, and appellate representation.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="employment">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+              <path d="M12 12v4m-2-2h4"/>
+            </svg>
+            <h3 class="service-card__title">Employment Law</h3>
+            <p class="service-card__desc">Manage workplace risk with compliant policies, defensible internal action, and representation before labour forums.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="ip">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/>
+              <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
+            </svg>
+            <h3 class="service-card__title">Intellectual Property</h3>
+            <p class="service-card__desc">Secure and enforce your brand, inventions, and creative assets through registration, licensing, and infringement action.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="tech-privacy">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              <circle cx="12" cy="16" r="1"/>
+            </svg>
+            <h3 class="service-card__title">Tech &amp; Data Privacy</h3>
+            <p class="service-card__desc">Build legally resilient digital operations through data privacy advisory, cyber response planning, and technology contract support.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="taxation">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            <h3 class="service-card__title">Taxation</h3>
+            <p class="service-card__desc">Address tax exposure early with practical advisory, assessment support, and representation in appeals and tribunal proceedings.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="service-card reveal" id="family">
+            <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <h3 class="service-card__title">Family &amp; Matrimonial Law</h3>
+            <p class="service-card__desc">Protect your rights and family interests with structured advice, sensitive handling, and strong representation from trial to appeal.</p>
+            <a href="contact.html" class="service-card__link">Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY OUR SERVICES STAND OUT -->
+    <section class="section services-difference">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--sp-12);">
+          <span class="section-label">Our difference</span>
+          <h2>What clients value in our service</h2>
+        </div>
+        <div class="grid-3 stagger">
+          <div class="differentiator reveal">
+            <div class="differentiator__num">01</div>
+            <div>
+              <h3>Clarity Before Action</h3>
+              <p>Before any filing or response, we map your options, legal risk, expected timelines, and likely outcomes so decisions are informed.</p>
+            </div>
+          </div>
+          <div class="differentiator reveal">
+            <div class="differentiator__num">02</div>
+            <div>
+              <h3>Strategy With Execution</h3>
+              <p>The same team that advises your strategy drives execution, ensuring consistency from early advice to hearings and final resolution.</p>
+            </div>
+          </div>
+          <div class="differentiator reveal">
+            <div class="differentiator__num">03</div>
+            <div>
+              <h3>Transparent Working Style</h3>
+              <p>You receive practical updates, defined next steps, and clear fee conversations so there are no surprises as your matter progresses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="section services-process">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:var(--sp-12);">
+          <span class="section-label">Our process</span>
+          <h2>How your matter moves forward</h2>
+          <p style="max-width:540px;margin:var(--sp-6) auto 0;">Our process keeps your matter structured, measurable, and aligned with your legal and commercial priorities.</p>
+        </div>
+
+        <div class="process-grid stagger">
+          <div class="process-card reveal">
+            <div class="process-card__num">01</div>
+            <h3>Consultation &amp; Context</h3>
+            <p>We understand the facts, identify immediate risk, and clarify what a successful outcome should look like for you.</p>
+          </div>
+          <div class="process-card reveal">
+            <div class="process-card__num">02</div>
+            <h3>Review &amp; Risk Mapping</h3>
+            <p>We assess records, legal position, and pressure points to identify strengths, vulnerabilities, and negotiation leverage.</p>
+          </div>
+          <div class="process-card reveal">
+            <div class="process-card__num">03</div>
+            <h3>Action Plan</h3>
+            <p>We set out the right forum, filing sequence, evidence priorities, and decision points in a clear stage-wise plan.</p>
+          </div>
+          <div class="process-card reveal">
+            <div class="process-card__num">04</div>
+            <h3>Representation &amp; Resolution</h3>
+            <p>We execute consistently in court, tribunal, or arbitration and pursue resolution paths that best protect your interests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <div
+      id="site-cta"
+      data-cta-class="cta-banner--services"
+      data-cta-label="Book a Consultation"
+      data-cta-href="contact.html"
+    ></div>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>
